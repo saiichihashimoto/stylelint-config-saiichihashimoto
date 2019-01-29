@@ -10,10 +10,29 @@
     "url": "git+https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto.git"
   },
   "main": "stylelint.config.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --report-unused-disable-directives --fix",
+      "git add"
+    ],
+    "package.json": [
+      "pkg-ok",
+      "sort-package-json",
+      "git add"
+    ]
+  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "eslintConfig": {
+    "extends": "saiichihashimoto"
   },
   "dependencies": {
     "stylelint": "9.10.1",
@@ -25,6 +44,15 @@
     "stylelint-scss": "3.5.1"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "2.1.0"
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.12.1",
+    "eslint-config-saiichihashimoto": "1.0.0",
+    "husky": "1.3.1",
+    "lint-staged": "8.1.1",
+    "pkg-ok": "2.3.1",
+    "sort-package-json": "1.18.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=9.10.1"
   }
 }
