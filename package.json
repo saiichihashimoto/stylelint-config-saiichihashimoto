@@ -1,0 +1,30 @@
+{
+  "name": "stylelint-config-saiichihashimoto",
+  "version": "0.0.0-development",
+  "homepage": "https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto#readme",
+  "bugs": {
+    "url": "https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto.git"
+  },
+  "main": "stylelint.config.js",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "stylelint": "9.10.1",
+    "stylelint-config-airbnb": "0.0.0",
+    "stylelint-config-standard": "18.2.0",
+    "stylelint-declaration-block-no-ignored-properties": "1.1.0",
+    "stylelint-no-z-index": "1.1.2",
+    "stylelint-order": "2.0.0",
+    "stylelint-scss": "3.5.1"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "2.1.0"
+  }
+}
