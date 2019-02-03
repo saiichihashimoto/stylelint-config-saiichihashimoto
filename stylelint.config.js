@@ -1,14 +1,14 @@
 /* eslint key-spacing: ['error', { beforeColon: false, afterColon: true }] */
 
 module.exports = {
-	extends: [
-		'stylelint-config-standard',
-		'stylelint-config-airbnb',
-	],
 	plugins: [
 		'stylelint-declaration-block-no-ignored-properties',
 		'stylelint-no-z-index',
 		'stylelint-order',
+	],
+	extends: [
+		'stylelint-config-standard',
+		'stylelint-config-airbnb',
 	],
 	rules: {
 		'order/properties-order': [
