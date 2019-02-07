@@ -10,6 +10,9 @@
     "url": "git+https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto.git"
   },
   "main": "stylelint.config.js",
+  "scripts": {
+    "test": "lint-my-app"
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
