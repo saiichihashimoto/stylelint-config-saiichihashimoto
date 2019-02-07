@@ -19,6 +19,7 @@ module.exports = {
 				unspecified: 'bottomAlphabetical',
 			},
 		],
+
 		'plugin/declaration-block-no-ignored-properties': true,
 		'plugin/no-z-index': [
 			'always',
@@ -26,6 +27,7 @@ module.exports = {
 				message: 'Use css variables for z-indexes',
 			},
 		],
+
 		'at-rule-name-space-after': 'always',
 		'at-rule-no-unknown': [
 			true,
@@ -42,7 +44,6 @@ module.exports = {
 		],
 		'block-opening-brace-newline-before': 'never-single-line',
 		'color-named': 'never',
-		'color-no-hex': true,
 		'color-no-invalid-hex': true,
 		'custom-property-empty-line-before': 'never',
 		'declaration-block-no-duplicate-properties': [
