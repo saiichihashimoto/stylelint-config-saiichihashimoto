@@ -1,6 +1,20 @@
 {
   "name": "stylelint-config-saiichihashimoto",
   "version": "0.0.0-development",
+  "keywords": [
+    "check",
+    "code",
+    "css",
+    "fix",
+    "format",
+    "lint",
+    "optimize",
+    "quality",
+    "stylelint",
+    "stylelint-config",
+    "stylelintconfig",
+    "validate"
+  ],
   "homepage": "https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto#readme",
   "bugs": {
     "url": "https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto/issues"
@@ -9,6 +23,7 @@
     "type": "git",
     "url": "git+https://github.com/saiichihashimoto/stylelint-config-saiichihashimoto.git"
   },
+  "license": "MIT",
   "main": "stylelint.config.js",
   "scripts": {
     "test": "lint-my-app"
