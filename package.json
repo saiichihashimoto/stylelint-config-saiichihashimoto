@@ -25,9 +25,6 @@
   },
   "license": "MIT",
   "main": "stylelint.config.js",
-  "scripts": {
-    "test": "lint-my-app"
-  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
