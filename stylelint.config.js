@@ -57,6 +57,7 @@ module.exports = {
 				],
 			},
 		],
+		'declaration-colon-space-after': 'always-single-line',
 		'declaration-empty-line-before': 'never',
 		'function-url-no-scheme-relative': true,
 		'function-comma-newline-before': 'never-multi-line',
