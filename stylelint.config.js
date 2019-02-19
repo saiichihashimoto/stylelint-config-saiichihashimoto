@@ -7,8 +7,9 @@ module.exports = {
 		'stylelint-order',
 	],
 	extends: [
-		'stylelint-config-standard',
 		'stylelint-config-airbnb',
+		'stylelint-config-recess-order',
+		'stylelint-config-standard',
 	],
 	rules: {
 		'order/properties-order': [
