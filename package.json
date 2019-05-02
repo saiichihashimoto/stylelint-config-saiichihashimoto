@@ -44,7 +44,7 @@
   "devDependencies": {
     "cz-conventional-changelog": "2.1.0",
     "eslint-config-saiichihashimoto": "1.2.15",
-    "husky": "2.0.0",
+    "husky": "2.2.0",
     "lint-my-app": "3.3.23",
     "stylelint": "10.0.1"
   },
