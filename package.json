@@ -45,7 +45,7 @@
     "cz-conventional-changelog": "2.1.0",
     "eslint-config-saiichihashimoto": "1.2.18",
     "husky": "2.3.0",
-    "lint-my-app": "3.3.24",
+    "lint-my-app": "3.3.25",
     "stylelint": "10.0.1"
   },
   "peerDependencies": {
