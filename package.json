@@ -34,11 +34,9 @@
     "extends": "saiichihashimoto"
   },
   "dependencies": {
-    "stylelint-config-airbnb": "0.0.0",
     "stylelint-config-recess-order": "2.0.3",
     "stylelint-config-standard": "18.3.0",
     "stylelint-declaration-block-no-ignored-properties": "2.1.0",
-    "stylelint-no-z-index": "1.1.2",
     "stylelint-scss": "3.9.1"
   },
   "devDependencies": {

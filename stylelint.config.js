@@ -3,15 +3,20 @@
 module.exports = {
 	plugins: [
 		'stylelint-declaration-block-no-ignored-properties',
-		'stylelint-no-z-index',
 		'stylelint-order',
+		'stylelint-scss',
 	],
 	extends: [
-		'stylelint-config-airbnb',
 		'stylelint-config-recess-order',
 		'stylelint-config-standard',
 	],
 	rules: {
+		'order/order': [
+			'declarations',
+			{ type: 'at-rule' },
+			{ type: 'at-rule', hasBlock: true },
+			'rules',
+		],
 		'order/properties-order': [
 			[
 				'composes',
@@ -21,14 +26,15 @@ module.exports = {
 			},
 		],
 
-		'plugin/declaration-block-no-ignored-properties': true,
-		'plugin/no-z-index': [
-			'always',
-			{
-				message: 'Use css variables for z-indexes',
-			},
-		],
+		'scss/dollar-variable-pattern': '^_?[a-z]+[\\w-]*$',
+		'scss/at-extend-no-missing-placeholder': true,
 
+		'plugin/declaration-block-no-ignored-properties': true,
+
+		'at-rule-empty-line-before': [
+			'always',
+			{ ignore: ['after-comment'], except: ['first-nested'] },
+		],
 		'at-rule-name-space-after': 'always',
 		'at-rule-no-unknown': [
 			true,
@@ -44,8 +50,13 @@ module.exports = {
 			},
 		],
 		'block-opening-brace-newline-before': 'never-single-line',
+		'block-opening-brace-space-before': 'always',
 		'color-named': 'never',
 		'color-no-invalid-hex': true,
+		'comment-empty-line-before': [
+			'always',
+			{ except: ['first-nested'] },
+		],
 		'custom-property-empty-line-before': 'never',
 		'declaration-block-no-duplicate-properties': [
 			true,
@@ -58,8 +69,11 @@ module.exports = {
 				],
 			},
 		],
+		'declaration-block-single-line-max-declarations': 1,
 		'declaration-colon-space-after': 'always-single-line',
+		'declaration-colon-space-before': 'never',
 		'declaration-empty-line-before': 'never',
+		'declaration-property-value-blacklist': { '/^border/': ['none'] },
 		'function-url-no-scheme-relative': true,
 		'function-comma-newline-before': 'never-multi-line',
 		'function-url-quotes': 'always',
@@ -67,6 +81,7 @@ module.exports = {
 		'max-nesting-depth': null,
 		'media-feature-name-no-vendor-prefix': true,
 		'media-query-list-comma-newline-before': 'never-multi-line',
+		'number-leading-zero': 'never',
 		'property-no-unknown': [
 			true,
 			{
@@ -86,6 +101,7 @@ module.exports = {
 			},
 		],
 		'selector-class-pattern': '^[a-z][a-z0-9]*([A-Z][a-z0-9]+)*$',
+		'selector-list-comma-newline-after': 'always',
 		'selector-max-combinators': [
 			1,
 			{
@@ -100,6 +116,7 @@ module.exports = {
 				severity: 'warning',
 			},
 		],
+		'selector-max-id': 0,
 		'selector-max-type': [
 			0,
 			{
