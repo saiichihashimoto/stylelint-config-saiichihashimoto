@@ -1,4 +1,5 @@
 /* eslint key-spacing: ['error', { beforeColon: false, afterColon: true }] */
+const recessOrder = require('stylelint-config-recess-order');
 
 module.exports = {
 	plugins: [
@@ -7,10 +8,11 @@ module.exports = {
 		'stylelint-scss',
 	],
 	extends: [
-		'stylelint-config-recess-order',
 		'stylelint-config-standard',
 	],
 	rules: {
+		'plugin/declaration-block-no-ignored-properties': true,
+
 		'order/order': [
 			'declarations',
 			{ type: 'at-rule' },
@@ -20,28 +22,23 @@ module.exports = {
 		'order/properties-order': [
 			[
 				'composes',
+				...recessOrder.rules['order/properties-order'],
 			],
 			{
 				unspecified: 'bottomAlphabetical',
 			},
 		],
 
-		'scss/dollar-variable-pattern': '^_?[a-z]+[\\w-]*$',
 		'scss/at-extend-no-missing-placeholder': true,
-
-		'plugin/declaration-block-no-ignored-properties': true,
+		'scss/at-rule-no-unknown': true,
+		'scss/dollar-variable-pattern': '^_?[a-z]+[\\w-]*$',
 
 		'at-rule-empty-line-before': [
 			'always',
 			{ ignore: ['after-comment'], except: ['first-nested'] },
 		],
 		'at-rule-name-space-after': 'always',
-		'at-rule-no-unknown': [
-			true,
-			{
-				ignoreAtRules: 'value',
-			},
-		],
+		'at-rule-no-unknown': null,
 		'at-rule-no-vendor-prefix': true,
 		'block-no-empty': [
 			true,
