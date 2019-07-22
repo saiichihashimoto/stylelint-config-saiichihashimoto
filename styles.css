@@ -1,3 +1,7 @@
-.class {
-	display: block;
+@media (min-width: 700px) and (orientation: landscape) {
+	.blah,
+	.foo {
+		display: none;
+		color: #ffffff;
+	}
 }
