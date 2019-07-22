@@ -11,11 +11,6 @@ module.exports = {
 	 *    'stylelint-scss',
 	 *],
 	 */
-	/*
-	 *extends: [
-	 *    'stylelint-config-standard',
-	 *],
-	 */
 
 	rules: {
 		// https://stylelint.io/user-guide/rules#possible-errors
