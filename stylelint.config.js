@@ -1,17 +1,10 @@
 /* eslint-disable import/no-commonjs, import/no-unused-modules, no-magic-numbers */
-/*
- *const recessOrder = require('stylelint-config-recess-order');
- */
+const recessOrder = require('stylelint-config-recess-order');
 
 module.exports = {
-	/*
-	 *plugins: [
-	 *    'stylelint-order',
-	 *],
-	 */
-
 	plugins: [
 		'stylelint-declaration-block-no-ignored-properties',
+		'stylelint-order',
 		'stylelint-scss',
 	],
 	rules: {
@@ -203,6 +196,29 @@ module.exports = {
 
 		// https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties#usage
 		'plugin/declaration-block-no-ignored-properties': true,
+
+		// https://github.com/hudochenkov/stylelint-order#list-of-rules
+		'order/order': [
+			'less-mixins',
+			'custom-properties',
+			'dollar-variables',
+			'at-variables',
+			'declarations',
+			{ type: 'at-rule' },
+			{ type: 'at-rule', hasBlock: true },
+			'rules',
+		],
+		'order/properties-order': [
+			[
+				'composes',
+				...recessOrder.rules['order/properties-order'],
+			],
+			{
+				emptyLineBeforeUnspecified: 'always',
+				unspecified:                'bottomAlphabetical',
+			},
+		],
+		'order/properties-alphabetical-order': null,
 
 		// https://github.com/kristerkari/stylelint-scss#list-of-rules
 		'scss/at-each-key-value-single-line':                   true,
