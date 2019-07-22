@@ -6,12 +6,12 @@
 module.exports = {
 	/*
 	 *plugins: [
-	 *    'stylelint-declaration-block-no-ignored-properties',
 	 *    'stylelint-order',
 	 *],
 	 */
 
 	plugins: [
+		'stylelint-declaration-block-no-ignored-properties',
 		'stylelint-scss',
 	],
 	rules: {
@@ -200,6 +200,9 @@ module.exports = {
 		'value-list-comma-space-after':                   'always-single-line',
 		'value-list-comma-space-before':                  'never',
 		'value-list-max-empty-lines':                     0,
+
+		// https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties#usage
+		'plugin/declaration-block-no-ignored-properties': true,
 
 		// https://github.com/kristerkari/stylelint-scss#list-of-rules
 		'scss/at-each-key-value-single-line':                   true,
