@@ -219,8 +219,7 @@ module.exports = {
 				...recessOrder.rules['order/properties-order'],
 			],
 			{
-				emptyLineBeforeUnspecified: 'always',
-				unspecified:                'bottomAlphabetical',
+				unspecified: 'bottomAlphabetical',
 			},
 		],
 		'order/properties-alphabetical-order': null,
