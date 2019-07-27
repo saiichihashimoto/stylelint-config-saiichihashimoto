@@ -192,7 +192,7 @@ module.exports = {
 		'selector-type-case':                             'lower',
 		'string-quotes':                                  ['single', { avoidEscape: false }],
 		'unit-case':                                      'lower',
-		'value-keyword-case':                             'lower',
+		'value-keyword-case':                             ['lower', { ignoreProperties: ['composes'] }],
 		'value-list-comma-newline-after':                 'always-multi-line',
 		'value-list-comma-newline-before':                'never-multi-line',
 		'value-list-comma-space-after':                   'always-single-line',
