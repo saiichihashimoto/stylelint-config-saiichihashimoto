@@ -48,10 +48,10 @@ module.exports = {
 		'declaration-block-single-line-max-declarations':     0,
 		'declaration-no-important':                           true,
 		'declaration-property-unit-blacklist':                null,
-		'declaration-property-unit-whitelist':                {
+		'declaration-property-unit-whitelist':                [{
 			'font-size': ['rem'],
-			'severity':  'warning',
 		},
+		{ severity: 'warning' }],
 		'declaration-property-value-blacklist': null,
 		'declaration-property-value-whitelist': null,
 		'function-blacklist':                   null,
