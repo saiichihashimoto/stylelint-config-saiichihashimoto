@@ -1,4 +1,3 @@
-/* eslint-disable import/no-commonjs, import/no-unused-modules, no-magic-numbers */
 const recessOrder = require('stylelint-config-recess-order');
 
 module.exports = {
@@ -45,7 +44,7 @@ module.exports = {
 		'comment-word-blacklist':                             null,
 		'custom-media-pattern':                               null,
 		'custom-property-pattern':                            null,
-		'declaration-block-no-redundant-longhand-properties': true,
+		'declaration-block-no-redundant-longhand-properties': null,
 		'declaration-block-single-line-max-declarations':     0,
 		'declaration-no-important':                           true,
 		'declaration-property-unit-blacklist':                null,
