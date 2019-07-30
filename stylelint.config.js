@@ -2,9 +2,9 @@ const recessOrder = require('stylelint-config-recess-order');
 
 module.exports = {
 	plugins: [
-		'stylelint-declaration-block-no-ignored-properties',
-		'stylelint-order',
-		'stylelint-scss',
+		require.resolve('stylelint-declaration-block-no-ignored-properties'),
+		require.resolve('stylelint-order'),
+		require.resolve('stylelint-scss'),
 	],
 	rules: {
 		// https://stylelint.io/user-guide/rules#possible-errors
