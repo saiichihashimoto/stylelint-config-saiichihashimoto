@@ -43,7 +43,7 @@
     "eslint-config-saiichihashimoto": "2.0.37",
     "husky": "3.0.5",
     "lint-my-app": "3.7.15",
-    "stylelint": "10.1.0"
+    "stylelint": "11.0.0"
   },
   "peerDependencies": {
     "stylelint": ">=9.10.1"
