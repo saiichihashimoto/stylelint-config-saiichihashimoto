@@ -42,7 +42,7 @@
     "cz-conventional-changelog": "3.0.2",
     "eslint-config-saiichihashimoto": "2.0.52",
     "husky": "3.0.9",
-    "lint-my-app": "3.7.23",
+    "lint-my-app": "3.7.24",
     "stylelint": "11.1.1"
   },
   "peerDependencies": {
