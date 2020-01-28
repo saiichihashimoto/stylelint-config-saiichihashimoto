@@ -39,7 +39,7 @@
     "stylelint-scss": "3.14.2"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.0.2",
+    "cz-conventional-changelog": "3.1.0",
     "eslint-config-saiichihashimoto": "2.1.0",
     "husky": "4.0.6",
     "lint-my-app": "3.7.46",
