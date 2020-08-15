@@ -36,7 +36,7 @@
   "dependencies": {
     "stylelint-config-recess-order": "2.1.0",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
-    "stylelint-scss": "3.15.0"
+    "stylelint-scss": "3.18.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.1.0",
