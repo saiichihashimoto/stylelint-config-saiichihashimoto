@@ -25,6 +25,9 @@
   },
   "license": "MIT",
   "main": "stylelint.config.js",
+  "scripts": {
+    "test": "echo no tests!"
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
