@@ -46,7 +46,7 @@
     "cz-conventional-changelog": "3.2.0",
     "eslint-config-saiichihashimoto": "2.6.1",
     "husky": "4.2.5",
-    "husky-config-saiichihashimoto": "1.2.0"
+    "husky-config-saiichihashimoto": "1.2.1"
   },
   "peerDependencies": {
     "stylelint": ">=9.10.1"
