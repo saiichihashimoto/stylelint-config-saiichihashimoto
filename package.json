@@ -43,10 +43,10 @@
     "stylelint-scss": "3.18.0"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.2.1",
+    "cz-conventional-changelog": "3.3.0",
     "eslint-config-saiichihashimoto": "2.9.3",
     "husky": "4.2.5",
-    "husky-config-saiichihashimoto": "1.2.1"
+    "husky-config-saiichihashimoto": "1.2.3"
   },
   "peerDependencies": {
     "stylelint": ">=9.10.1"
