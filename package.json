@@ -37,7 +37,7 @@
     "extends": "saiichihashimoto"
   },
   "dependencies": {
-    "stylelint": "13.7.1",
+    "stylelint": "13.7.2",
     "stylelint-config-recess-order": "2.1.0",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
     "stylelint-scss": "3.18.0"
