@@ -48,10 +48,12 @@ module.exports = {
 		'declaration-block-single-line-max-declarations':     0,
 		'declaration-no-important':                           true,
 		'declaration-property-unit-blacklist':                null,
-		'declaration-property-unit-whitelist':                [{
-			'font-size': ['rem'],
-		},
-		{ severity: 'warning' }],
+		'declaration-property-unit-whitelist':                [
+			{
+				'font-size': ['rem'],
+			},
+			{ severity: 'warning' },
+		],
 		'declaration-property-value-blacklist': null,
 		'declaration-property-value-whitelist': null,
 		'function-blacklist':                   null,
@@ -61,10 +63,12 @@ module.exports = {
 		'function-whitelist':                   null,
 		'keyframes-name-pattern':               null,
 		'max-nesting-depth':                    null,
-		'media-feature-name-blacklist':         ['^max-width', {
-			message:  'Use min-width for a mobile-first approach (media-feature-name-blacklist)',
-			severity: 'warning',
-		}],
+		'media-feature-name-blacklist':         [
+			'^max-width', {
+				message:  'Use min-width for a mobile-first approach (media-feature-name-blacklist)',
+				severity: 'warning',
+			},
+		],
 		'media-feature-name-no-vendor-prefix':   true,
 		'media-feature-name-value-whitelist':    null,
 		'media-feature-name-whitelist':          null,
@@ -81,14 +85,18 @@ module.exports = {
 		'selector-id-pattern':                   null,
 		'selector-max-class':                    null,
 		'selector-max-attribute':                [0, { severity: 'warning' }],
-		'selector-max-combinators':              [1, {
-			message:  'Use composition and/or more classes over nested selectors. https://github.com/css-modules/css-modules#composition http://thesassway.com/intermediate/avoid-nested-selectors-for-more-modular-css',
-			severity: 'warning',
-		}],
-		'selector-max-compound-selectors': [2, {
-			message:  'Use composition and/or more classes over nested selectors. https://github.com/css-modules/css-modules#composition http://thesassway.com/intermediate/avoid-nested-selectors-for-more-modular-css',
-			severity: 'warning',
-		}],
+		'selector-max-combinators':              [
+			1, {
+				message:  'Use composition and/or more classes over nested selectors. https://github.com/css-modules/css-modules#composition http://thesassway.com/intermediate/avoid-nested-selectors-for-more-modular-css',
+				severity: 'warning',
+			},
+		],
+		'selector-max-compound-selectors': [
+			2, {
+				message:  'Use composition and/or more classes over nested selectors. https://github.com/css-modules/css-modules#composition http://thesassway.com/intermediate/avoid-nested-selectors-for-more-modular-css',
+				severity: 'warning',
+			},
+		],
 		'selector-max-empty-lines':               0,
 		'selector-max-id':                        0,
 		'selector-max-pseudo-class':              null,
@@ -141,7 +149,7 @@ module.exports = {
 		'declaration-colon-space-before':                 'never',
 		'declaration-empty-line-before':                  'never',
 		'font-family-name-quotes':                        'always-unless-keyword',
-		'font-weight-notation':                           ['named-where-possible', { ignore: ['relative'] }],
+		'font-weight-notation':                           ['numeric', { ignore: ['relative'] }],
 		'function-comma-newline-after':                   'always-multi-line',
 		'function-comma-newline-before':                  'never-multi-line',
 		'function-comma-space-after':                     'always-single-line',
