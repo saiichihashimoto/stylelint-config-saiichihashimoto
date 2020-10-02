@@ -216,9 +216,9 @@ module.exports = {
 			'custom-properties',
 			'dollar-variables',
 			'at-variables',
-			'declarations',
 			{ type: 'at-rule' },
 			{ type: 'at-rule', hasBlock: true },
+			'declarations',
 			'rules',
 		],
 		'order/properties-order': [
