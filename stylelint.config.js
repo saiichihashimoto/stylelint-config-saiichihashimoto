@@ -7,8 +7,16 @@ module.exports = {
 		require.resolve('stylelint-scss'),
 	],
 	rules: {
-		'at-rule-blacklist':                                  null,
-		'at-rule-empty-line-before':                          ['always', { except: ['first-nested'] }],
+		'at-rule-blacklist':         null,
+		'at-rule-empty-line-before': [
+			'always',
+			{
+				except: [
+					'blockless-after-same-name-blockless',
+					'first-nested',
+				],
+			},
+		],
 		'at-rule-name-case':                                  'lower',
 		'at-rule-name-newline-after':                         'always-multi-line',
 		'at-rule-name-space-after':                           'always-single-line',
