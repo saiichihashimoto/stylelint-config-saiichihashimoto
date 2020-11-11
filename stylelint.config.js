@@ -50,7 +50,7 @@ module.exports = {
 		'custom-property-pattern':                            null,
 		'declaration-bang-space-after':                       'never',
 		'declaration-bang-space-before':                      'always',
-		'declaration-block-no-duplicate-properties':          true,
+		'declaration-block-no-duplicate-properties':          [true, { ignoreProperties: ['composes'] }],
 		'declaration-block-no-redundant-longhand-properties': null,
 		'declaration-block-no-shorthand-property-overrides':  true,
 		'declaration-block-semicolon-newline-after':          'always',
