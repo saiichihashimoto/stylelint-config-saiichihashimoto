@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
-    "eslint-config-saiichihashimoto": "2.12.25",
+    "eslint-config-saiichihashimoto": "2.12.26",
     "husky": "4.3.8",
     "husky-config-saiichihashimoto": "1.2.21"
   },
