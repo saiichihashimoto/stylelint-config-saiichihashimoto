@@ -40,7 +40,7 @@
     "stylelint": "13.9.0",
     "stylelint-config-recess-order": "2.3.0",
     "stylelint-declaration-block-no-ignored-properties": "2.3.0",
-    "stylelint-scss": "3.18.0"
+    "stylelint-scss": "3.19.0"
   },
   "devDependencies": {
     "cz-conventional-changelog": "3.3.0",
