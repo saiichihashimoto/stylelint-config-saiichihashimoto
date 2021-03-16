@@ -153,17 +153,22 @@ module.exports = {
 		'order/properties-order':              [
 			[
 				// For Styled-Components
-				'-styled-mixin0',
-				'-styled-mixin1',
-				'-styled-mixin2',
-				'-styled-mixin3',
-				'-styled-mixin4',
-				'-styled-mixin5',
-				'-styled-mixin6',
-				'-styled-mixin7',
-				'-styled-mixin8',
-				'-styled-mixin9',
-				'composes',
+				{
+					order:      'flexible',
+					properties: [
+						'-styled-mixin0',
+						'-styled-mixin1',
+						'-styled-mixin2',
+						'-styled-mixin3',
+						'-styled-mixin4',
+						'-styled-mixin5',
+						'-styled-mixin6',
+						'-styled-mixin7',
+						'-styled-mixin8',
+						'-styled-mixin9',
+					],
+				},
+				{ properties: ['composes'] },
 				...recessOrder.rules['order/properties-order'],
 			],
 			{ unspecified: 'bottomAlphabetical' },
