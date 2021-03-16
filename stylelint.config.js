@@ -14,7 +14,7 @@ module.exports = {
 		'at-rule-name-space-after':              'always-single-line',
 		'at-rule-no-unknown':                    null,
 		'at-rule-no-vendor-prefix':              true,
-		'at-rule-property-requirelist':          null,
+		'at-rule-property-required-list':        null,
 		'at-rule-semicolon-newline-after':       'always',
 		'at-rule-semicolon-space-before':        'never',
 		'block-closing-brace-empty-line-before': 'never',
