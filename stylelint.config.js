@@ -98,7 +98,7 @@ module.exports = {
 		'length-zero-no-unit':                                true,
 		'linebreaks':                                         'unix',
 		'max-empty-lines':                                    1,
-		'max-line-length':                                    [100, { severity: 'warning' }],
+		'max-line-length':                                    null,
 		'max-nesting-depth':                                  null,
 		'media-feature-colon-space-after':                    'always',
 		'media-feature-colon-space-before':                   'never',
